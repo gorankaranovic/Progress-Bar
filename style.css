@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(yellow, rgb(150, 182, 150));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 500px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bars{
+    width: 100%;
+}
+.backBar{
+    height: 5px;
+    border: none;
+    background-color: grey;
+}
+.frontBar{
+    width: 0%;
+    height: 5px;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    border: none;
+    transform: translateY(-50%);
+}
+.steps{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.step{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    background-color: grey;
+    height: 25px;
+    border-radius: 50%;
+   
+}
+.fa-solid{
+    color: white;
+}
+.step.checked{
+    background-color: green;
+}
+button{
+    background-color: rgb(116, 59, 136);
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    margin: 30px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+button:hover{
+    opacity: 0.8;
+}
+small{
+    position: absolute;
+    color: green;
+    top: 30px;
+    font-weight: 600;
+}
+
+
